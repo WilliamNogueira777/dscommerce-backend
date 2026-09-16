@@ -27,7 +27,7 @@ public class ProductDTO {
     
     private String imgUrl;
 
-    @NotEmpty
+    @NotEmpty(message = "Deve ter pelo menos uma categoria")
     List<CategoryDTO> categories = new ArrayList<>();
     
     public ProductDTO() {
